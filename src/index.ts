@@ -1,4 +1,4 @@
-import TodoItem from "./TodoItem";
+import TodoItem from "./model/TodoItem";
 
 // const data = [
 //   { id: 1, task: "장보기", complete: true },
@@ -12,7 +12,7 @@ import TodoItem from "./TodoItem";
 // }
 
 import { data } from "./data";
-import TodoCollection from "./TodoCollection";
+import TodoCollection from "./service/TodoCollection";
 
 const sampleTodos: TodoItem[] = data.map(
   (item) => new TodoItem(item.id, item.task, item.complete),

@@ -1,4 +1,4 @@
-import TodoItem from "./TodoItem";
+import TodoItem from "../model/TodoItem";
 
 class TodoCollection {
   private nextId: number = 1;

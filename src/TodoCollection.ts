@@ -26,3 +26,5 @@ class TodoCollection {
     }
   }
 }
+
+export default TodoCollection;

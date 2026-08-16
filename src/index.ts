@@ -1,7 +1,3 @@
-// console.log("Hello Todo List!");
-// console.log("Hello Todo List!");
-// console.log("Hello Todo List!");
-// console.log("Hello Todo List!");
 import TodoItem from "./TodoItem";
 
 const data = [

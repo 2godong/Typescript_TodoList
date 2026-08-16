@@ -20,5 +20,12 @@ const sampleTodos: TodoItem[] = data.map(
 
 const myTodoCollection = new TodoCollection("My Todo List", sampleTodos);
 
+myTodoCollection.addTodo("자바스크립트 학습");
+myTodoCollection.addTodo("놀기");
+
+myTodoCollection.makeComplete(3, true);
+
 console.log(`${myTodoCollection.userName}`);
-myTodoCollection.todoItems.forEach((item) => item.printDetails());
+// myTodoCollection.todoItems.forEach((item) => item.printDetails());
+
+myTodoCollection.getTodoItems(true).forEach((item) => item.printDetails());

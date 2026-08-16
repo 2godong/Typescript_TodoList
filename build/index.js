@@ -17,6 +17,10 @@ const data_1 = require("./data");
 const TodoCollection_1 = __importDefault(require("./TodoCollection"));
 const sampleTodos = data_1.data.map((item) => new TodoItem_1.default(item.id, item.task, item.complete));
 const myTodoCollection = new TodoCollection_1.default("My Todo List", sampleTodos);
+myTodoCollection.addTodo("자바스크립트 학습");
+myTodoCollection.addTodo("놀기");
+myTodoCollection.makeComplete(3, true);
 console.log(`${myTodoCollection.userName}`);
-myTodoCollection.todoItems.forEach((item) => item.printDetails());
+// myTodoCollection.todoItems.forEach((item) => item.printDetails());
+myTodoCollection.getTodoItems(true).forEach((item) => item.printDetails());
 //# sourceMappingURL=index.js.map

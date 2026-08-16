@@ -5,7 +5,9 @@
     "start": "concurrently npm:start:*"
   },
   "dependencies": {
+    "@types/inquirer": "^9.0.10",
     "concurrently": "^10.0.5",
+    "inquirer": "^14.0.2",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
     "typescript": "^7.0.2"

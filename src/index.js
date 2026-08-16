@@ -1,3 +1,4 @@
+// 자바스크립트 버전
 class TodoItem {
   constructor(id, task, complete) {
     this.id = id;

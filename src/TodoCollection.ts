@@ -14,15 +14,29 @@ class TodoCollection {
   }
 
   getTodoById(id: number): TodoItem | undefined {
-    return this.todoItems.find((item) => item.id === id);
+    return this.itemMap.get(id);
   }
 
   addTodo(task: string): number {
     while (this.getTodoById(this.nextId)) {
       this.nextId++;
     }
-    this.todoItems.push(new TodoItem(this.nextId, task));
+    this.itemMap.set(this.nextId, new TodoItem(this.nextId, task));
     return this.nextId;
+  }
+
+  getTodoItems(includeComplete: boolean): TodoItem[] {
+    return [...this.itemMap.values()].filter(
+      (item) => includeComplete || !item.complete,
+    );
+  }
+
+  removeComplete(): void {
+    this.itemMap.forEach((item) => {
+      if (item.complete) {
+        this.itemMap.delete(item.id);
+      }
+    });
   }
 
   makeComplete(id: number, complete: boolean): void {

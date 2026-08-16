@@ -7,6 +7,8 @@ declare class TodoCollection {
     constructor(userName: string, todoItems?: TodoItem[]);
     getTodoById(id: number): TodoItem | undefined;
     addTodo(task: string): number;
+    getTodoItems(includeComplete: boolean): TodoItem[];
+    removeComplete(): void;
     makeComplete(id: number, complete: boolean): void;
 }
 export default TodoCollection;

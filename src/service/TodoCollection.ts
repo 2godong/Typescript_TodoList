@@ -1,3 +1,4 @@
+import { ItemCounts } from "../model/itemCounts";
 import TodoItem from "../model/TodoItem";
 
 class TodoCollection {
@@ -39,7 +40,7 @@ class TodoCollection {
     });
   }
 
-  getItemCount(): { total: number; incomplete: number } {
+  getItemCount(): ItemCounts {
     return {
       total: this.itemMap.size,
       incomplete: this.getTodoItems(false).length,

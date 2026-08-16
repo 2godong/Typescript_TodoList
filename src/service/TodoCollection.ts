@@ -39,6 +39,13 @@ class TodoCollection {
     });
   }
 
+  getItemCount(): { total: number; incomplete: number } {
+    return {
+      total: this.itemMap.size,
+      incomplete: this.getTodoItems(false).length,
+    };
+  }
+
   makeComplete(id: number, complete: boolean): void {
     const todoItem = this.getTodoById(id);
     if (todoItem) {

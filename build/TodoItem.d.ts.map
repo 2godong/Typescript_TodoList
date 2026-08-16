@@ -1,0 +1,1 @@
+{"version":3,"file":"TodoItem.d.ts","sourceRoot":"","sources":["../src/TodoItem.ts"],"names":[],"mappings":"AAAA,cAAM,QAAQ;IAEH,EAAE,EAAE,MAAM;IACV,IAAI,EAAE,MAAM;IACZ,QAAQ,EAAE,OAAO;IAH1B,YACS,EAAE,EAAE,MAAM,EACV,IAAI,EAAE,MAAM,EACZ,QAAQ,EAAE,OAAO,EAKzB;IAED,YAAY,IAAI,IAAI,CAInB;CACF;eAEc,QAAQ"}

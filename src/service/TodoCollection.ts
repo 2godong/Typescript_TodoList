@@ -47,7 +47,7 @@ class TodoCollection {
     };
   }
 
-  makeComplete(id: number, complete: boolean): void {
+  markComplete(id: number, complete: boolean): void {
     const todoItem = this.getTodoById(id);
     if (todoItem) {
       todoItem.complete = complete;
